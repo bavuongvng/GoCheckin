@@ -7,23 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0406DB8521FDEB97008EC88B /* DateOfBirthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0406DB8421FDEB97008EC88B /* DateOfBirthViewController.swift */; };
+		0406DB8721FE06D5008EC88B /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0406DB8621FE06D5008EC88B /* EmailViewController.swift */; };
+		0406DB8921FE1D65008EC88B /* UIView_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0406DB8821FE1D65008EC88B /* UIView_Extensions.swift */; };
 		0429486C21FD473D00FB9212 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0429486B21FD473D00FB9212 /* AppDelegate.swift */; };
-		0429486E21FD473D00FB9212 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0429486D21FD473D00FB9212 /* ViewController.swift */; };
 		0429487121FD473D00FB9212 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0429486F21FD473D00FB9212 /* Main.storyboard */; };
 		0429487421FD473D00FB9212 /* GoCheckin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0429487221FD473D00FB9212 /* GoCheckin.xcdatamodeld */; };
 		0429487621FD473F00FB9212 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0429487521FD473F00FB9212 /* Assets.xcassets */; };
 		0429487921FD473F00FB9212 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0429487721FD473F00FB9212 /* LaunchScreen.storyboard */; };
+		0429488421FD47C100FB9212 /* PhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0429488321FD47C100FB9212 /* PhoneNumberViewController.swift */; };
+		0429488621FD593A00FB9212 /* UIButton_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0429488521FD593A00FB9212 /* UIButton_Extensions.swift */; };
+		04BD487921FD987800A64BB5 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD487821FD987800A64BB5 /* NameViewController.swift */; };
+		04BD487B21FDA16100A64BB5 /* UITextField_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD487A21FDA16100A64BB5 /* UITextField_Extensions.swift */; };
+		04BD487E21FDA18500A64BB5 /* UIColor_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD487D21FDA18500A64BB5 /* UIColor_Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0406DB8421FDEB97008EC88B /* DateOfBirthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateOfBirthViewController.swift; sourceTree = "<group>"; };
+		0406DB8621FE06D5008EC88B /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
+		0406DB8821FE1D65008EC88B /* UIView_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView_Extensions.swift; sourceTree = "<group>"; };
 		0429486821FD473D00FB9212 /* GoCheckin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoCheckin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0429486B21FD473D00FB9212 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0429486D21FD473D00FB9212 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0429487021FD473D00FB9212 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0429487321FD473D00FB9212 /* GoCheckin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoCheckin.xcdatamodel; sourceTree = "<group>"; };
 		0429487521FD473F00FB9212 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0429487821FD473F00FB9212 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0429487A21FD473F00FB9212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0429488321FD47C100FB9212 /* PhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewController.swift; sourceTree = "<group>"; };
+		0429488521FD593A00FB9212 /* UIButton_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton_Extensions.swift; sourceTree = "<group>"; };
+		04BD487821FD987800A64BB5 /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
+		04BD487A21FDA16100A64BB5 /* UITextField_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField_Extensions.swift; sourceTree = "<group>"; };
+		04BD487D21FDA18500A64BB5 /* UIColor_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor_Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +70,10 @@
 		0429486A21FD473D00FB9212 /* GoCheckin */ = {
 			isa = PBXGroup;
 			children = (
+				0429488221FD478200FB9212 /* Extensions */,
+				0429488121FD477C00FB9212 /* Modal */,
+				0429488021FD477500FB9212 /* View */,
 				0429486B21FD473D00FB9212 /* AppDelegate.swift */,
-				0429486D21FD473D00FB9212 /* ViewController.swift */,
 				0429486F21FD473D00FB9212 /* Main.storyboard */,
 				0429487521FD473F00FB9212 /* Assets.xcassets */,
 				0429487721FD473F00FB9212 /* LaunchScreen.storyboard */,
@@ -65,6 +81,35 @@
 				0429487221FD473D00FB9212 /* GoCheckin.xcdatamodeld */,
 			);
 			path = GoCheckin;
+			sourceTree = "<group>";
+		};
+		0429488021FD477500FB9212 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0429488321FD47C100FB9212 /* PhoneNumberViewController.swift */,
+				04BD487821FD987800A64BB5 /* NameViewController.swift */,
+				0406DB8421FDEB97008EC88B /* DateOfBirthViewController.swift */,
+				0406DB8621FE06D5008EC88B /* EmailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0429488121FD477C00FB9212 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		0429488221FD478200FB9212 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0429488521FD593A00FB9212 /* UIButton_Extensions.swift */,
+				0406DB8821FE1D65008EC88B /* UIView_Extensions.swift */,
+				04BD487A21FDA16100A64BB5 /* UITextField_Extensions.swift */,
+				04BD487D21FDA18500A64BB5 /* UIColor_Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +183,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0429486E21FD473D00FB9212 /* ViewController.swift in Sources */,
 				0429486C21FD473D00FB9212 /* AppDelegate.swift in Sources */,
+				0406DB8721FE06D5008EC88B /* EmailViewController.swift in Sources */,
+				0406DB8921FE1D65008EC88B /* UIView_Extensions.swift in Sources */,
+				0429488621FD593A00FB9212 /* UIButton_Extensions.swift in Sources */,
 				0429487421FD473D00FB9212 /* GoCheckin.xcdatamodeld in Sources */,
+				04BD487B21FDA16100A64BB5 /* UITextField_Extensions.swift in Sources */,
+				04BD487E21FDA18500A64BB5 /* UIColor_Extensions.swift in Sources */,
+				0406DB8521FDEB97008EC88B /* DateOfBirthViewController.swift in Sources */,
+				0429488421FD47C100FB9212 /* PhoneNumberViewController.swift in Sources */,
+				04BD487921FD987800A64BB5 /* NameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +347,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = VuongHN.GoCheckin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -312,7 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = VuongHN.GoCheckin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
