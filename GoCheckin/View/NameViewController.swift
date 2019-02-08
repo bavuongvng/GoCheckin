@@ -30,10 +30,6 @@ class NameViewController: UIViewController,UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         initial()
-        
-//        Customer.getAllCustomer()
-        
-        Customer.createNewCustomer()
     }
     
     func initial() {

@@ -12,14 +12,11 @@ extension Customer{
     static func getAllCustomer(){
         //Setup the url request
         let myUrl =  "http://192.168.1.173:3000/api/customer/"
-        
-        print("Url \(myUrl)")
         guard let url = URL(string: myUrl) else {
             print("Error: Cannot create URL!")
             return
         }
         let urlRequest = URLRequest(url: url)
-        print("Url request \(urlRequest)")
         //Setup the session
         let config = URLSessionConfiguration.default
         let session = URLSession(configuration: config)
@@ -55,6 +52,37 @@ extension Customer{
             }catch{
                 print("Error trying to convert json")
                 return
+            }
+        }
+        task.resume()
+    }
+    
+    static func getCustomerByPhone(number:String, dialing_code:String?){
+        let myUrl =  "http://192.168.1.173:3000/api/customer/\(number)/\(dialing_code ?? "%2B84")"
+        guard let url = URL(string: myUrl) else{
+            return print("Error: Cannot create url!")
+        }
+        let urlRequest = URLRequest(url: url)
+        
+        let config = URLSessionConfiguration.default
+        let session = URLSession(configuration: config)
+        
+        let task = session.dataTask(with: urlRequest){
+            (data,res,error) in
+            guard error == nil else{
+                return print("Error: error calling get request")
+            }
+            guard let responseData = data else{
+                return print("Error: did not receive data")
+            }
+            do{
+                guard let customer = try JSONSerialization.jsonObject(with: responseData, options: [])
+                    as?[ Dictionary<String,Any>] else{
+                        return print("Error trying to convert data to json")
+                }
+                print("Customer match: \(customer)")
+            }catch{
+                return print("Error trying to convert data to json")
             }
         }
         task.resume()

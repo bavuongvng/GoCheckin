@@ -34,6 +34,9 @@ class PhoneNumberViewController: UIViewController {
         toggleButtonClearAndRemove()
     }
     @IBAction func onSuccess(_ sender: Any) {
+        
+        Customer.getCustomerByPhone(number: lblPhone.text ?? "", dialing_code: nil)
+        
         let storyBoard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let nameViewController = storyBoard.instantiateViewController(withIdentifier: "NameScene") as! NameViewController
         self.present(nameViewController, animated: true, completion: nil)
