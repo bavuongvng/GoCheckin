@@ -17,6 +17,7 @@
 		0429487921FD473F00FB9212 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0429487721FD473F00FB9212 /* LaunchScreen.storyboard */; };
 		0429488421FD47C100FB9212 /* PhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0429488321FD47C100FB9212 /* PhoneNumberViewController.swift */; };
 		0429488621FD593A00FB9212 /* UIButton_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0429488521FD593A00FB9212 /* UIButton_Extensions.swift */; };
+		045EEF48220D8AC70010D542 /* Customer.Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EEF47220D8AC70010D542 /* Customer.Controller.swift */; };
 		04BD487921FD987800A64BB5 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD487821FD987800A64BB5 /* NameViewController.swift */; };
 		04BD487B21FDA16100A64BB5 /* UITextField_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD487A21FDA16100A64BB5 /* UITextField_Extensions.swift */; };
 		04BD487E21FDA18500A64BB5 /* UIColor_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD487D21FDA18500A64BB5 /* UIColor_Extensions.swift */; };
@@ -36,6 +37,7 @@
 		0429487A21FD473F00FB9212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0429488321FD47C100FB9212 /* PhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewController.swift; sourceTree = "<group>"; };
 		0429488521FD593A00FB9212 /* UIButton_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton_Extensions.swift; sourceTree = "<group>"; };
+		045EEF47220D8AC70010D542 /* Customer.Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.Controller.swift; sourceTree = "<group>"; };
 		04BD487821FD987800A64BB5 /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
 		04BD487A21FDA16100A64BB5 /* UITextField_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField_Extensions.swift; sourceTree = "<group>"; };
 		04BD487D21FDA18500A64BB5 /* UIColor_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor_Extensions.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 		0429486A21FD473D00FB9212 /* GoCheckin */ = {
 			isa = PBXGroup;
 			children = (
+				045EEF46220D8AAC0010D542 /* Controller */,
 				0429488221FD478200FB9212 /* Extensions */,
 				0429488121FD477C00FB9212 /* Modal */,
 				0429488021FD477500FB9212 /* View */,
@@ -113,6 +116,14 @@
 				04BD487D21FDA18500A64BB5 /* UIColor_Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		045EEF46220D8AAC0010D542 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				045EEF47220D8AC70010D542 /* Customer.Controller.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045EEF48220D8AC70010D542 /* Customer.Controller.swift in Sources */,
 				0429486C21FD473D00FB9212 /* AppDelegate.swift in Sources */,
 				0406DB8721FE06D5008EC88B /* EmailViewController.swift in Sources */,
 				0406DB8921FE1D65008EC88B /* UIView_Extensions.swift in Sources */,
