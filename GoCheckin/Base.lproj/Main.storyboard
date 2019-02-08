@@ -581,7 +581,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="988-lw-VgR">
                                                 <rect key="frame" x="0.0" y="0.0" width="160" height="60"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="160" id="bIW-St-5Ka"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="bIW-St-5Ka"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="Not now">
@@ -608,7 +608,7 @@
                                                 <rect key="frame" x="540" y="0.0" width="160" height="60"/>
                                                 <color key="backgroundColor" red="0.1215686275" green="0.043137254899999998" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="160" id="EGz-5T-j51"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="EGz-5T-j51"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="Next">
@@ -627,7 +627,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="48"/>
                                                 <color key="backgroundColor" red="0.1215686275" green="0.043137254899999998" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="TWw-xX-mQA"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="TWw-xX-mQA"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="@gmail">
@@ -641,7 +641,7 @@
                                                 <rect key="frame" x="183.5" y="0.0" width="150" height="48"/>
                                                 <color key="backgroundColor" red="0.1215686275" green="0.043137254899999998" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="EEn-pW-h9z"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="EEn-pW-h9z"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="@yahoo">
@@ -655,7 +655,7 @@
                                                 <rect key="frame" x="366.5" y="0.0" width="150" height="48"/>
                                                 <color key="backgroundColor" red="0.1215686275" green="0.043137254899999998" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="Zlu-Nz-bk9"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Zlu-Nz-bk9"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="@icloud">
@@ -669,7 +669,7 @@
                                                 <rect key="frame" x="550" y="0.0" width="150" height="48"/>
                                                 <color key="backgroundColor" red="0.1215686275" green="0.043137254899999998" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="Rfx-6b-tse"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Rfx-6b-tse"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="@me">
@@ -688,7 +688,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="48"/>
                                                 <color key="backgroundColor" red="0.1215686275" green="0.043137254899999998" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="eq8-3I-QuB"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="eq8-3I-QuB"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title=".com">
@@ -702,7 +702,7 @@
                                                 <rect key="frame" x="183.5" y="0.0" width="150" height="48"/>
                                                 <color key="backgroundColor" red="0.1215686275" green="0.043137254899999998" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="2OR-DK-NsF"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="2OR-DK-NsF"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title=".net">
@@ -716,7 +716,7 @@
                                                 <rect key="frame" x="366.5" y="0.0" width="150" height="48"/>
                                                 <color key="backgroundColor" red="0.1215686275" green="0.043137254899999998" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="a72-wC-UOZ"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="a72-wC-UOZ"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title=".info">
@@ -730,7 +730,7 @@
                                                 <rect key="frame" x="550" y="0.0" width="150" height="48"/>
                                                 <color key="backgroundColor" red="0.1215686275" green="0.043137254899999998" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="8rG-Bv-Hcc"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="8rG-Bv-Hcc"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title=".io">

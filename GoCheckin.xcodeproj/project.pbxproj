@@ -20,6 +20,7 @@
 		04BD487921FD987800A64BB5 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD487821FD987800A64BB5 /* NameViewController.swift */; };
 		04BD487B21FDA16100A64BB5 /* UITextField_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD487A21FDA16100A64BB5 /* UITextField_Extensions.swift */; };
 		04BD487E21FDA18500A64BB5 /* UIColor_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD487D21FDA18500A64BB5 /* UIColor_Extensions.swift */; };
+		04E9EB8F220D50270057F36F /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9EB8E220D50270057F36F /* Customer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		04BD487821FD987800A64BB5 /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
 		04BD487A21FDA16100A64BB5 /* UITextField_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField_Extensions.swift; sourceTree = "<group>"; };
 		04BD487D21FDA18500A64BB5 /* UIColor_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor_Extensions.swift; sourceTree = "<group>"; };
+		04E9EB8E220D50270057F36F /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		0429488121FD477C00FB9212 /* Modal */ = {
 			isa = PBXGroup;
 			children = (
+				04E9EB8E220D50270057F36F /* Customer.swift */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				0429487421FD473D00FB9212 /* GoCheckin.xcdatamodeld in Sources */,
 				04BD487B21FDA16100A64BB5 /* UITextField_Extensions.swift in Sources */,
 				04BD487E21FDA18500A64BB5 /* UIColor_Extensions.swift in Sources */,
+				04E9EB8F220D50270057F36F /* Customer.swift in Sources */,
 				0406DB8521FDEB97008EC88B /* DateOfBirthViewController.swift in Sources */,
 				0429488421FD47C100FB9212 /* PhoneNumberViewController.swift in Sources */,
 				04BD487921FD987800A64BB5 /* NameViewController.swift in Sources */,

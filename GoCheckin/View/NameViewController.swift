@@ -30,6 +30,59 @@ class NameViewController: UIViewController,UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         initial()
+        
+        makeGetCall()
+    }
+    
+    func makeGetCall(){
+        //Setup the url request
+        let myUrl =  "http://192.168.1.173:3000/api/customer/"
+
+        print("Url \(myUrl)")
+        guard let url = URL(string: myUrl) else {
+            print("Error: Cannot create URL!")
+            return
+        }
+        let urlRequest = URLRequest(url: url)
+        print("Url request \(urlRequest)")
+        //Setup the session
+        let config = URLSessionConfiguration.default
+        let session = URLSession(configuration: config)
+
+        //make request
+        let task = session.dataTask(with: urlRequest){
+            (data,res,error) in
+            //Check for any errors
+            guard error == nil else{
+                print("Error calling get request")
+                print(error!)
+                return
+            }
+
+            //make sure we got data
+            guard let responseData = data else {
+                print("Did not receive data")
+                return
+            }
+
+            // parse the result as json, since that's what the api provides
+            do{
+                guard let customers = try JSONSerialization.jsonObject(with: responseData, options: [])
+                as? [Dictionary<String,Any>] else{
+                        print("Error trying to convert data to json")
+                        return
+                }
+              
+                //now we have customer
+                // let's just print it to prove we can access it
+                print("The customer is: " + customers.description)
+                print("The customer is: \(customers[1]["_id"] ?? "")")
+            }catch{
+                print("Error trying to convert json")
+                return
+            }
+        }
+        task.resume()
     }
     
     func initial() {
