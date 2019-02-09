@@ -56,40 +56,73 @@ extension Customer{
         }
         task.resume()
     }
-    
-    static func getCustomerByPhone(number:String, dialing_code:String?){
+    // handle async
+    static func getCustomerByPhone(number:String, dialing_code:String?) -> Customer?{
+        let group = DispatchGroup()
+        var checkinCustomer:Customer?
         let myUrl =  "http://192.168.1.173:3000/api/customer/\(number)/\(dialing_code ?? "%2B84")"
         guard let url = URL(string: myUrl) else{
-            return print("Error: Cannot create url!")
+            print("Error: Cannot create url!")
+            group.leave()
+            return nil
         }
         let urlRequest = URLRequest(url: url)
-        
         let config = URLSessionConfiguration.default
         let session = URLSession(configuration: config)
-        
-        let task = session.dataTask(with: urlRequest){
+        let task = session.dataTask(with: urlRequest) {
             (data,res,error) in
+            
+            print("Callback task")
             guard error == nil else{
-                return print("Error: error calling get request")
+                print("Error: error calling get request")
+                group.leave()
+                return
             }
             guard let responseData = data else{
-                return print("Error: did not receive data")
+                print("Error: did not receive data")
+                group.leave()
+                return
             }
+            
             do{
                 guard let customer = try JSONSerialization.jsonObject(with: responseData, options: [])
-                    as?[ Dictionary<String,Any>] else{
-                        return print("Error trying to convert data to json")
+                    as?[Dictionary<String,Any>] else{
+                        print("Error trying to convert data to json")
+                        group.leave()
+                        return
                 }
-                print("Customer match: \(customer)")
+                guard customer.count > 0 else{
+                    print("New customer")
+                    group.leave()
+                    return
+                }
+                
+                let id:String = customer[0]["_id"] as! String
+                let name:String = customer[0]["name"] as! String
+                let email:String = customer[0]["email"] as! String
+                let dateOfBirth:NSDate = NSDate.convertToNSDate(string: customer[0]["dateOfBirth"] as! String)
+                
+                let phoneContact:Dictionary<String,Any> = customer[0]["phone"] as! Dictionary<String, Any>
+                let phoneDialing:String = phoneContact["dialing_code"] as! String
+                let phonNumber:String = phoneContact["number"] as! String
+                let phone:Phone = Phone(number: phonNumber, dialing_code: phoneDialing)
+
+                checkinCustomer = Customer(id: id, name: name, dateOfBirth: dateOfBirth, phone: phone, email: email)
+                group.leave()
             }catch{
-                return print("Error trying to convert data to json")
+                print("Error trying to convert data to json")
+                group.leave()
+                return
             }
         }
+       
         task.resume()
+        group.enter()
+        group.wait()
+        return checkinCustomer
     }
     
     static func createNewCustomer(){
-        
         let myUrl =  "http://192.168.1.173:3000/api/customer/create/"
         guard let url = URL(string: myUrl) else{
             print("Error: cannot create url")

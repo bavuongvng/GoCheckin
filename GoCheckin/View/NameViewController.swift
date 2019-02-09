@@ -14,9 +14,15 @@ class NameViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var txtName: UITextField!
     @IBOutlet weak var btnClear: UIButton!
     
+    weak var newCustomer:Customer?
+    
     @IBAction func onNext(sender: UIButton){
         let storyBoard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let dateOfBirthViewController = storyBoard.instantiateViewController(withIdentifier: "DateOfBirthScene")
+        let dateOfBirthViewController = storyBoard.instantiateViewController(withIdentifier: "DateOfBirthScene") as! DateOfBirthViewController
+        
+        newCustomer?.name = txtName.text
+        dateOfBirthViewController.newCustomer = newCustomer
+        
         self.present(dateOfBirthViewController, animated: true, completion: nil)
     }
     @IBAction func onClear(_ sender: Any) {

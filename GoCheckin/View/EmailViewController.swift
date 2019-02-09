@@ -17,6 +17,8 @@ class EmailViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var viewCham: UIStackView!
     @IBOutlet var btnSuggestions: [UIButton]!
     
+    weak var newCustomer:Customer?
+    
     @IBAction func btnACongClick(sender: UIButton) {
         var email = txtEmail.text!
         let index = email.index(of: "@")!.encodedOffset
@@ -47,9 +49,19 @@ class EmailViewController: UIViewController,UITextFieldDelegate {
         }
     }
     @IBAction func onNext(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let selectStaffViewController = storyboard.instantiateViewController(withIdentifier: "SelectStaffScene") as! SelectStaffViewController
+        newCustomer?.email = txtEmail.text!
+        
+        selectStaffViewController.newCustomer = newCustomer
+        
+        self.present(selectStaffViewController,animated: true,completion: nil)
     }
     @IBAction func onNotNow(_ sender: Any) {
     }
+    
+    @IBAction func unwindToEmailScene(unwind:UIStoryboardSegue){}
     
     override func viewDidLoad() {
         super.viewDidLoad()
