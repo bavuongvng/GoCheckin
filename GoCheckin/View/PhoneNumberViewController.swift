@@ -16,6 +16,8 @@ class PhoneNumberViewController: UIViewController {
     @IBOutlet weak var lblPhone: UILabel!
     @IBOutlet weak var btnSuccess: UIButton!
     
+    var newCustomer:Customer = Customer()
+    
     @IBAction func onClear(_ sender: Any) {
         lblPhone.text = ""
         toggleButtonClearAndRemove()
@@ -35,7 +37,21 @@ class PhoneNumberViewController: UIViewController {
     }
     @IBAction func onSuccess(_ sender: Any) {
         let storyBoard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let customerCheckin = Customer.getCustomerByPhone(number: lblPhone.text ?? "", dialing_code: nil)
+        
+        if customerCheckin?.id != nil{
+            let selectStaffViewController = storyBoard.instantiateViewController(withIdentifier: "SelectStaffScene") as! SelectStaffViewController
+            selectStaffViewController.newCustomer = customerCheckin
+            self.present(selectStaffViewController, animated: true, completion: nil)
+            return
+        }
+        
+        let phone = Phone(number: lblPhone.text!, dialing_code: "+84")
+        newCustomer.phone = phone
+        
         let nameViewController = storyBoard.instantiateViewController(withIdentifier: "NameScene") as! NameViewController
+        nameViewController.newCustomer = newCustomer
+        
         self.present(nameViewController, animated: true, completion: nil)
     }
     
@@ -44,8 +60,6 @@ class PhoneNumberViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initial()
-        
-        
     }
     
     func initial() {

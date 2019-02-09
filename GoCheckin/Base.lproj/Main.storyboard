@@ -783,6 +783,39 @@
             </objects>
             <point key="canvasLocation" x="2792.9648241206032" y="-6.4748201438848927"/>
         </scene>
+        <!--Select Staff View Controller-->
+        <scene sceneID="L2a-Sk-vFT">
+            <objects>
+                <viewController storyboardIdentifier="SelectStaffScene" id="aoE-OH-BGe" customClass="SelectStaffViewController" customModule="GoCheckin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZRp-sB-kAM">
+                        <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaw-vE-VnQ">
+                                <rect key="frame" x="15" y="31" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ic-back-48"/>
+                                <connections>
+                                    <segue destination="tX4-TM-zeQ" kind="unwind" unwindAction="unwindToEmailSceneWithUnwind:" id="cDe-74-Y1i"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select staff" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6e4-aD-Axe">
+                                <rect key="frame" x="501" y="157" width="193" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.2478786409" green="0.6225408912" blue="0.2007884979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.013178236782550812" green="0.039365477859973907" blue="0.11090103536844254" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="nFt-ku-llg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bFw-Gh-kWY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="tX4-TM-zeQ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3440" y="-6"/>
+        </scene>
     </scenes>
     <resources>
         <image name="ic-back-48" width="36" height="36"/>

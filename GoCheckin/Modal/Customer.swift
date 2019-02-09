@@ -11,14 +11,21 @@ import Foundation
 struct Phone {
     var dialing_code:String
     var number:String
+    
+    init(number:String,dialing_code:String) {
+        self.number = number
+        self.dialing_code = dialing_code
+    }
 }
 
 class Customer {
-    private var id:String?
-    private var name:String?
-    private var dateOfBirth:NSDate?
-    private var phone:Phone?
-    private var email:String?
+    var id:String?
+    var name:String?
+    var dateOfBirth:NSDate?
+    var phone:Phone?
+    var email:String?
+    
+    init() {}
     
     init(id:String,name:String,dateOfBirth:NSDate,phone:Phone,email:String) {
         self.id = id
@@ -26,5 +33,15 @@ class Customer {
         self.dateOfBirth = dateOfBirth
         self.phone = phone
         self.email = email
+    }
+    
+    func toString() {
+        print("""
+            =====> Customer
+            Customer: \(self.name ?? "")
+            Phone: \(self.phone?.dialing_code ?? "")\(self.phone?.number ?? "")
+            Email: \(self.email ?? "")
+            DateOfbirth: \(NSDate.convertToString(date: self.dateOfBirth!) )
+        """)
     }
 }

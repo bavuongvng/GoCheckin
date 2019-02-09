@@ -14,6 +14,8 @@ class DateOfBirthViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var btnNext: UIButton!
     @IBOutlet weak var btnClear: UIButton!
     
+    weak var newCustomer:Customer?
+    
     private var datePicker:UIDatePicker?
     
     @IBAction func onClear(_ sender: Any) {
@@ -22,7 +24,11 @@ class DateOfBirthViewController: UIViewController,UITextFieldDelegate {
     }
     @IBAction func onNext(_ sender: Any) {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let emailViewController = storyBoard.instantiateViewController(withIdentifier: "EmailScene")
+        let emailViewController = storyBoard.instantiateViewController(withIdentifier: "EmailScene") as! EmailViewController
+        
+        newCustomer?.dateOfBirth = NSDate.convertToNSDate(string: txtDateOfBirth.text!)
+        emailViewController.newCustomer = newCustomer
+        
         self.present(emailViewController, animated: true, completion: nil)
     }
     
@@ -53,7 +59,7 @@ class DateOfBirthViewController: UIViewController,UITextFieldDelegate {
     
     @objc func onDateChange(datePicker:UIDatePicker){
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd/MM/yyyy"
+        dateFormatter.dateFormat = "yyyy-MM-dd"
         txtDateOfBirth.text = dateFormatter.string(from: datePicker.date)
         self.toggleBtnClear()
     }

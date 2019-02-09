@@ -10,6 +10,8 @@
 		0406DB8521FDEB97008EC88B /* DateOfBirthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0406DB8421FDEB97008EC88B /* DateOfBirthViewController.swift */; };
 		0406DB8721FE06D5008EC88B /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0406DB8621FE06D5008EC88B /* EmailViewController.swift */; };
 		0406DB8921FE1D65008EC88B /* UIView_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0406DB8821FE1D65008EC88B /* UIView_Extensions.swift */; };
+		040F503F220E96B900A714A9 /* NSDate_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F503E220E96B900A714A9 /* NSDate_Extensions.swift */; };
+		040F5041220EA06700A714A9 /* SelectStaffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F5040220EA06700A714A9 /* SelectStaffViewController.swift */; };
 		0429486C21FD473D00FB9212 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0429486B21FD473D00FB9212 /* AppDelegate.swift */; };
 		0429487121FD473D00FB9212 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0429486F21FD473D00FB9212 /* Main.storyboard */; };
 		0429487421FD473D00FB9212 /* GoCheckin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0429487221FD473D00FB9212 /* GoCheckin.xcdatamodeld */; };
@@ -28,6 +30,8 @@
 		0406DB8421FDEB97008EC88B /* DateOfBirthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateOfBirthViewController.swift; sourceTree = "<group>"; };
 		0406DB8621FE06D5008EC88B /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 		0406DB8821FE1D65008EC88B /* UIView_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView_Extensions.swift; sourceTree = "<group>"; };
+		040F503E220E96B900A714A9 /* NSDate_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSDate_Extensions.swift; sourceTree = "<group>"; };
+		040F5040220EA06700A714A9 /* SelectStaffViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectStaffViewController.swift; sourceTree = "<group>"; };
 		0429486821FD473D00FB9212 /* GoCheckin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoCheckin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0429486B21FD473D00FB9212 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0429487021FD473D00FB9212 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -95,6 +99,7 @@
 				04BD487821FD987800A64BB5 /* NameViewController.swift */,
 				0406DB8421FDEB97008EC88B /* DateOfBirthViewController.swift */,
 				0406DB8621FE06D5008EC88B /* EmailViewController.swift */,
+				040F5040220EA06700A714A9 /* SelectStaffViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -114,6 +119,7 @@
 				0406DB8821FE1D65008EC88B /* UIView_Extensions.swift */,
 				04BD487A21FDA16100A64BB5 /* UITextField_Extensions.swift */,
 				04BD487D21FDA18500A64BB5 /* UIColor_Extensions.swift */,
+				040F503E220E96B900A714A9 /* NSDate_Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -201,6 +207,8 @@
 				0429486C21FD473D00FB9212 /* AppDelegate.swift in Sources */,
 				0406DB8721FE06D5008EC88B /* EmailViewController.swift in Sources */,
 				0406DB8921FE1D65008EC88B /* UIView_Extensions.swift in Sources */,
+				040F503F220E96B900A714A9 /* NSDate_Extensions.swift in Sources */,
+				040F5041220EA06700A714A9 /* SelectStaffViewController.swift in Sources */,
 				0429488621FD593A00FB9212 /* UIButton_Extensions.swift in Sources */,
 				0429487421FD473D00FB9212 /* GoCheckin.xcdatamodeld in Sources */,
 				04BD487B21FDA16100A64BB5 /* UITextField_Extensions.swift in Sources */,
